@@ -2,7 +2,8 @@
 
 ![](screenshot.png)
 
-A multiple choice app for quizzing on state capitals.
+A light grid that lets you turn on lights until the whole grid is lit up, then
+the lights turn off in the order they were turned on.
 
 ## Getting Started
 
