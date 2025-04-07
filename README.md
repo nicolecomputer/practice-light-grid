@@ -1,4 +1,4 @@
-# Quiz
+# Light Grid
 
 ![](screenshot.png)
 
