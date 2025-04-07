@@ -1,0 +1,48 @@
+body {
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+
+.light-grid {
+  box-sizing: content-box;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+
+  width: 400px;
+
+  padding: 8px;
+
+  --color-light-on: rgb(27, 244, 103);
+  --color-light-off: light-dark(rgb(180, 178, 178), rgb(137, 124, 124));
+  border: 1px solid transparent;
+
+  transition: border 1s ease;
+}
+
+.light-grid-lighting {
+  border: 4px solid lightblue;
+}
+
+.light-grid-extinguishing {
+  border: 1px solid transparent;
+}
+
+.light-button {
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: var(--color-light-on);
+  border-radius: 8px;
+  border: none;
+}
+
+.light-on {
+  box-shadow: 0px 0px 10px var(--color-light-on);
+}
+
+.light-off {
+  background-color: var(--color-light-off);
+  border: 1px solid rgb(from var(--color-light-off) r g b / 0.5);
+}
